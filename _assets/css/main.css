@@ -310,3 +310,20 @@ body {
 .user_chat_info{
     margin-left: 10px;
 }
+
+/* chat */
+.container_chat{
+    width: 100%;
+    height: calc(100% - 120px);
+    background: url(../_resources/imgs/mine.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 30%;
+}
+
+/* message */
+.container_message{
+    width: 100%;
+    height: 60px;
+    background: #F3EEEA;
+}

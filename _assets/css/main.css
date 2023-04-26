@@ -155,6 +155,40 @@ body{
     cursor: pointer;
 }
 
+/* Container search */
+.container_search{
+    width: 100%;
+    height: 50px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    background: #EAEAEA;
+}
+
+.searchInput{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+}
+
+.box_icon_search{
+    position: absolute;
+    z-index: 2;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_icon_search .fa-magnifying-glass{
+    opacity: .4;
+}
+
 /* wh Right */
 .wh_right{
     width: 65%;

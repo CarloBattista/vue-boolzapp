@@ -35,11 +35,29 @@ body{
     background: #009688;
 }
 
+/* MainApp */
 .mainApp_wh{
     position: relative;
     z-index: 2;
     width: 80%;
     height: 100%;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: red;
+}
+
+/* wh Left */
+.wh_left{
+    width: 35%;
+    height: 100%;
+    background: green;
+}
+
+/* wh Right */
+.wh_right{
+    width: 65%;
+    height: 100%;
+    background: blue;
 }

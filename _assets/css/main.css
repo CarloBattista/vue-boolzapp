@@ -11,6 +11,7 @@ body{
     font-family: "Poppins", sans-serif;
     background: #DADBD3;
     color: #070000;
+    user-select: none;
 }
 
 /* WhatsApp Container Main App */
@@ -110,12 +111,48 @@ body{
     transition: all .1s ease;
 }
 
-.box_func:active{
+.box_icon_header:active{
     background: rgba(255, 255, 255, .3);
 }
 
 .box_func i{
     opacity: .4;
+}
+
+/* Alert notification */
+.alert_notification{
+    width: 100%;
+    height: 70px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    background: #8EDAFC;
+}
+
+.box_activated{
+    background: #fff;
+}
+
+.box_activated .fa-bell-slash{
+    color: #8EDAFC;
+    opacity: 1;
+}
+
+.alert_text{
+    margin-left: 10px;
+}
+
+.heading_alert{
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.subHeading_alert{
+    font-size: .7rem;
+    font-weight: 400;
+    text-decoration: underline;
+    opacity: .4;
+    cursor: pointer;
 }
 
 /* wh Right */

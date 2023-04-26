@@ -227,7 +227,7 @@ body {
     border-bottom: 1px solid #d0d0d0;
 }
 
-.chat_item.chat_selected{
+.chat_item.chat_selected {
     background: #d0d0d0;
 }
 
@@ -280,11 +280,11 @@ body {
 .wh_right {
     width: 65%;
     height: 100%;
-    background: blue;
+    background: #DADBD3;
 }
 
 /* Header chat */
-.header_chat{
+.header_chat {
     width: 100%;
     height: 60px;
     padding: 10px 16px;
@@ -294,25 +294,25 @@ body {
     background: #EAEAEA;
 }
 
-.user_chat_info .nameProfile{
+.user_chat_info .nameProfile {
     font-size: 1rem;
     font-weight: 400;
     margin-left: 10px;
     margin-left: 0;
 }
 
-.user_chat_info .last_access{
+.user_chat_info .last_access {
     font-size: .7rem;
     font-weight: 400;
     opacity: .6;
 }
 
-.user_chat_info{
+.user_chat_info {
     margin-left: 10px;
 }
 
 /* chat */
-.container_chat{
+.container_chat {
     width: 100%;
     height: calc(100% - 120px);
     background: url(../_resources/imgs/mine.jpg);
@@ -321,8 +321,70 @@ body {
     background-size: 30%;
 }
 
+.all_messages {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px 60px;
+    overflow-y: auto;
+    user-select: text;
+}
+
+.all_messages::-webkit-scrollbar {
+    width: 10px;
+}
+
+.all_messages::-webkit-scrollbar-track {
+    background: #EAEAEA;
+}
+
+.all_messages::-webkit-scrollbar-thumb {
+    background: #d0d0d0;
+}
+
+.message {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.message p {
+    position: relative;
+    right: 0;
+    text-align: left;
+    max-width: 75%;
+    padding: 12px;
+    background: #D5F9BA;
+    border-radius: 8px 9px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.clock_message {
+    display: block;
+    font-size: 0.85em;
+    opacity: 0.5;
+    margin-left: 3%;
+    text-align: right;
+}
+
+.my_message {
+    justify-content: flex-end;
+}
+
+.user_message {
+    justify-content: flex-start;
+}
+
+.user_message p {
+    background: #fff;
+    text-align: left;
+}
+
 /* message */
-.container_message{
+.container_message {
     width: 100%;
     height: 60px;
     padding: 10px 20px;
@@ -332,13 +394,13 @@ body {
     background: #F3EEEA;
 }
 
-.container_message_text{
+.container_message_text {
     width: 100%;
     height: 100%;
     padding: 0 20px;
 }
 
-.messageInput{
+.messageInput {
     width: 100%;
     height: 100%;
     border-radius: 8px;

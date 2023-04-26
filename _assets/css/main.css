@@ -91,6 +91,33 @@ body{
     margin-left: 10px;
 }
 
+/* Container function */
+.container_function{
+    display: flex;
+    align-items: center;
+}
+
+.box_func{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    background: transparent;
+    transition: all .1s ease;
+}
+
+.box_func:active{
+    background: rgba(255, 255, 255, .3);
+}
+
+.box_func i{
+    opacity: .4;
+}
+
 /* wh Right */
 .wh_right{
     width: 65%;

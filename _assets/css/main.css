@@ -9,4 +9,27 @@
 
 body{
     font-family: "Poppins", sans-serif;
+    background: #DADBD3;
+    color: #070000;
+}
+
+/* WhatsApp Container Main App */
+.wh_container_main{
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+/* BG line */
+.wh_container_main::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    background: #009688;
 }

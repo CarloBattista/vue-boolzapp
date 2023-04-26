@@ -28,7 +28,7 @@
                         <!-- Container profile -->
                         <div class="container_profile">
                             <div class="dot_avatar">
-                                <img src="./_assets/_resources/imgs/avatar_1.jpg" alt="profile image">
+                                <img src="./_assets/_resources/imgs/avatar_6.jpg" alt="profile image">
                             </div>
                             <span class="nameProfile">Sofia</span>
                         </div>
@@ -65,181 +65,13 @@
                     <!-- Container chats -->
                     <div class="container_all_chats">
                         <ul class="chats_lists">
-                            <li class="chat_item chat_selected">
+                            <li v-for="(element, index) in contacts" :key="index" class="chat_item">
                                 <div class="user_avatar">
-                                    <img src="./_assets/_resources/imgs/avatar_2.jpg" alt="user avatar">
+                                    <img :src="'./_assets/_resources/imgs/' + element.avatar" alt="user avatar">
                                 </div>
                                 <div class="user_info">
                                     <div class="top_line">
-                                        <span class="user_name">Michele</span>
-                                        <span class="clock">12:00</span>
-                                    </div>
-                                    <div class="bottom_line">
-                                        <p class="last_message">Ultimo messaggio inviato</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="chat_item">
-                                <div class="user_avatar">
-                                    <img src="./_assets/_resources/imgs/avatar_2.jpg" alt="user avatar">
-                                </div>
-                                <div class="user_info">
-                                    <div class="top_line">
-                                        <span class="user_name">Michele</span>
-                                        <span class="clock">12:00</span>
-                                    </div>
-                                    <div class="bottom_line">
-                                        <p class="last_message">Ultimo messaggio inviato</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="chat_item">
-                                <div class="user_avatar">
-                                    <img src="./_assets/_resources/imgs/avatar_2.jpg" alt="user avatar">
-                                </div>
-                                <div class="user_info">
-                                    <div class="top_line">
-                                        <span class="user_name">Michele</span>
-                                        <span class="clock">12:00</span>
-                                    </div>
-                                    <div class="bottom_line">
-                                        <p class="last_message">Ultimo messaggio inviato</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="chat_item">
-                                <div class="user_avatar">
-                                    <img src="./_assets/_resources/imgs/avatar_2.jpg" alt="user avatar">
-                                </div>
-                                <div class="user_info">
-                                    <div class="top_line">
-                                        <span class="user_name">Michele</span>
-                                        <span class="clock">12:00</span>
-                                    </div>
-                                    <div class="bottom_line">
-                                        <p class="last_message">Ultimo messaggio inviato</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="chat_item">
-                                <div class="user_avatar">
-                                    <img src="./_assets/_resources/imgs/avatar_2.jpg" alt="user avatar">
-                                </div>
-                                <div class="user_info">
-                                    <div class="top_line">
-                                        <span class="user_name">Michele</span>
-                                        <span class="clock">12:00</span>
-                                    </div>
-                                    <div class="bottom_line">
-                                        <p class="last_message">Ultimo messaggio inviato</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="chat_item">
-                                <div class="user_avatar">
-                                    <img src="./_assets/_resources/imgs/avatar_2.jpg" alt="user avatar">
-                                </div>
-                                <div class="user_info">
-                                    <div class="top_line">
-                                        <span class="user_name">Michele</span>
-                                        <span class="clock">12:00</span>
-                                    </div>
-                                    <div class="bottom_line">
-                                        <p class="last_message">Ultimo messaggio inviato</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="chat_item">
-                                <div class="user_avatar">
-                                    <img src="./_assets/_resources/imgs/avatar_2.jpg" alt="user avatar">
-                                </div>
-                                <div class="user_info">
-                                    <div class="top_line">
-                                        <span class="user_name">Michele</span>
-                                        <span class="clock">12:00</span>
-                                    </div>
-                                    <div class="bottom_line">
-                                        <p class="last_message">Ultimo messaggio inviato</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="chat_item">
-                                <div class="user_avatar">
-                                    <img src="./_assets/_resources/imgs/avatar_2.jpg" alt="user avatar">
-                                </div>
-                                <div class="user_info">
-                                    <div class="top_line">
-                                        <span class="user_name">Michele</span>
-                                        <span class="clock">12:00</span>
-                                    </div>
-                                    <div class="bottom_line">
-                                        <p class="last_message">Ultimo messaggio inviato</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="chat_item">
-                                <div class="user_avatar">
-                                    <img src="./_assets/_resources/imgs/avatar_2.jpg" alt="user avatar">
-                                </div>
-                                <div class="user_info">
-                                    <div class="top_line">
-                                        <span class="user_name">Michele</span>
-                                        <span class="clock">12:00</span>
-                                    </div>
-                                    <div class="bottom_line">
-                                        <p class="last_message">Ultimo messaggio inviato</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="chat_item">
-                                <div class="user_avatar">
-                                    <img src="./_assets/_resources/imgs/avatar_2.jpg" alt="user avatar">
-                                </div>
-                                <div class="user_info">
-                                    <div class="top_line">
-                                        <span class="user_name">Michele</span>
-                                        <span class="clock">12:00</span>
-                                    </div>
-                                    <div class="bottom_line">
-                                        <p class="last_message">Ultimo messaggio inviato</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="chat_item">
-                                <div class="user_avatar">
-                                    <img src="./_assets/_resources/imgs/avatar_2.jpg" alt="user avatar">
-                                </div>
-                                <div class="user_info">
-                                    <div class="top_line">
-                                        <span class="user_name">Michele</span>
-                                        <span class="clock">12:00</span>
-                                    </div>
-                                    <div class="bottom_line">
-                                        <p class="last_message">Ultimo messaggio inviato</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="chat_item">
-                                <div class="user_avatar">
-                                    <img src="./_assets/_resources/imgs/avatar_2.jpg" alt="user avatar">
-                                </div>
-                                <div class="user_info">
-                                    <div class="top_line">
-                                        <span class="user_name">Michele</span>
-                                        <span class="clock">12:00</span>
-                                    </div>
-                                    <div class="bottom_line">
-                                        <p class="last_message">Ultimo messaggio inviato</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="chat_item">
-                                <div class="user_avatar">
-                                    <img src="./_assets/_resources/imgs/avatar_2.jpg" alt="user avatar">
-                                </div>
-                                <div class="user_info">
-                                    <div class="top_line">
-                                        <span class="user_name">Michele</span>
+                                        <span class="user_name">{{element.name}}</span>
                                         <span class="clock">12:00</span>
                                     </div>
                                     <div class="bottom_line">

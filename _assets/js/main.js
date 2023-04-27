@@ -181,16 +181,30 @@ createApp({
             indexActive: 0,
 
             activeContact: {},
+
+            // Variabile per collegare input
+            textMessage: "",
         }
     },
-    created(){
+    created() {
         // Al caricamento della pagina viene visualizzata l'immagine della chat attiva
         this.activeContact = this.contacts[0];
     },
     methods: {
-        chatSelect: function(index) {
+        chatSelect: function (index) {
             this.indexActive = index;
             this.activeContact = this.contacts[index];
+        },
+
+        sendMessage() {
+            const activeUser = this.contacts[this.indexActive]; // Data aggiornata dinamicamente
+            const message = {
+                date: new Date().toLocaleString(),
+                message: this.textMessage,
+                status: 'sent'
+            };
+            activeUser.messages.push(message); // Il messaggio viene pushato
+            this.textMessage = ''; // Dopo aver inviato il messaggio, l'input viene pulito
         },
     },
 }).mount('#app')

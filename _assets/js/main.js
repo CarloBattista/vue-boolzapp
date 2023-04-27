@@ -227,9 +227,6 @@ createApp({
                 this.contacts[this.indexActive].messages.push(responseMessage);
             }, 2000);
         },
-        chatSelect(index) {
-            this.indexActive = index;
-        },
 
 
     },

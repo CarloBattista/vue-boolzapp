@@ -199,7 +199,7 @@ createApp({
         sendMessage() {
             const activeUser = this.contacts[this.indexActive]; // Data aggiornata dinamicamente
             const message = {
-                date: new Date().toLocaleString(),
+                date: new Date().toLocaleString().split(' ')[1],
                 message: this.textMessage,
                 status: 'sent'
             };
@@ -220,7 +220,7 @@ createApp({
                 ];
                 const randomIndex = Math.floor(Math.random() * responses.length);
                 const responseMessage = {
-                    date: new Date().toLocaleString(),
+                    date: new Date().toLocaleString([], {year: 'numeric', hour: '2-digit', minute: '2-digit'}),
                     message: responses[randomIndex],
                     status: 'received'
                 };

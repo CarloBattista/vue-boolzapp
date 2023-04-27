@@ -408,3 +408,20 @@ body {
     border: none;
     outline: none;
 }
+
+/* Media Query */
+@media only screen and (max-width: 900px){
+    .mainApp_wh{
+        flex-direction: column;
+    }
+    .wh_left{
+        height: auto;
+    }
+    .wh_left,
+    .wh_right{
+        width: 100%;
+    }
+    .container_all_chats{
+        max-height: 140px;
+    }
+}

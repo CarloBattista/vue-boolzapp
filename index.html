@@ -112,21 +112,11 @@
                     <!-- chat -->
                     <div class="container_chat">
                         <div class="all_messages">
-                            <div class="message my_message">
-                                <p class="message_text">
-                                    <span class="clock_message"></span>
+                            <div class="message" v-for="(message, index) in contacts[indexActive].messages" :key="index" class="message" :class="message.status">
+                                <p class="message_text">{{ message.message }}
+                                    <span class="clock_message">{{ message.date }}</span>
                                 </p>
                             </div>
-                            <!-- <div class="message my_message">
-                                <p class="message_text">Ricordati di stendere i panni
-                                    <span class="clock_message">15:50</span>
-                                </p>
-                            </div>
-                            <div class="message user_message">
-                                <p class="message_text">Tutto fatto!
-                                    <span class="clock_message">15:50</span>
-                                </p>
-                            </div> -->
                         </div>
                     </div>
                     <!-- message -->

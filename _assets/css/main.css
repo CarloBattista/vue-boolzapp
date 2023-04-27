@@ -361,26 +361,36 @@ body {
     text-align: left;
     max-width: 75%;
     padding: 12px;
-    background: #D5F9BA;
+    background: #fff;
     border-radius: 8px 9px;
     font-size: 0.9em;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .clock_message {
-    display: block;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
     font-size: 0.85em;
     opacity: 0.5;
     margin-left: 3%;
     text-align: right;
 }
 
-.my_message {
+.message.sent .message_text{
+    background: #D5F9BA;
+}
+
+.sent {
     justify-content: flex-end;
 }
 
-.user_message {
+.message.received .message_text{
+    background: #fff;
+}
+
+.received {
     justify-content: flex-start;
 }
 

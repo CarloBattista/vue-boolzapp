@@ -27,7 +27,7 @@
                     <div class="header_profile">
                         <!-- Container profile -->
                         <div class="container_profile">
-                            <div class="dot_avatar">
+                            <div class="dot_avatar dot_avatar_profile">
                                 <img src="./_assets/_resources/imgs/avatar_6.jpg" alt="profile image">
                             </div>
                             <span class="nameProfile">Sofia</span>
@@ -89,11 +89,11 @@
                         <!-- Container profile chat -->
                         <div class="container_profile">
                             <div class="dot_avatar">
-                                <img src="./_assets/_resources/imgs/avatar_1.jpg" alt="profile image">
+                                <img :src="'./_assets/_resources/imgs/' + activeContact.avatar" :alt="activeContact.name">
                             </div>
                             <div class="user_chat_info">
-                                <span class="nameProfile">Michele</span>
-                                <p class="last_access">Ultimo accesso oggi alle 12:00</p>
+                                <span class="nameProfile">{{ activeContact.name }}</span>
+                                <p class="last_access">Ultimo accesso</p>
                             </div>
                         </div>
                         <!-- Container function chat -->
@@ -113,11 +113,11 @@
                     <div class="container_chat">
                         <div class="all_messages">
                             <div class="message my_message">
-                                <p class="message_text">Hai portato a spasso il cane?
-                                    <span class="clock_message">15:30</span>
+                                <p class="message_text">
+                                    <span class="clock_message"></span>
                                 </p>
                             </div>
-                            <div class="message my_message">
+                            <!-- <div class="message my_message">
                                 <p class="message_text">Ricordati di stendere i panni
                                     <span class="clock_message">15:50</span>
                                 </p>
@@ -126,7 +126,7 @@
                                 <p class="message_text">Tutto fatto!
                                     <span class="clock_message">15:50</span>
                                 </p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <!-- message -->

@@ -179,11 +179,18 @@ createApp({
 
             // Variabile per index chat impostata su 0
             indexActive: 0,
+
+            activeContact: {},
         }
     },
+    created(){
+        // Al caricamento della pagina viene visualizzata l'immagine della chat attiva
+        this.activeContact = this.contacts[0];
+    },
     methods: {
-        chatSelect(chatOpen) {
-            this.indexActive = chatOpen
+        chatSelect: function(index) {
+            this.indexActive = index;
+            this.activeContact = this.contacts[index];
         },
     },
 }).mount('#app')

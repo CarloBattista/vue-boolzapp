@@ -205,6 +205,32 @@ createApp({
             };
             activeUser.messages.push(message); // Il messaggio viene pushato
             this.textMessage = ''; // Dopo aver inviato il messaggio, l'input viene pulito
+
+
+            setTimeout(() => {
+                const responses = [
+                    'Ok',
+                    'Non ho capito',
+                    'Ci vediamo dopo',
+                    'Ci vediamo dopo, ora non posso parlare.',
+                    'Mi piace questa canzone',
+                    'Ciaoooo!👋',
+                    'Cosa stai facendo?',
+                    'Sto studiando',
+                ];
+                const randomIndex = Math.floor(Math.random() * responses.length);
+                const responseMessage = {
+                    date: new Date().toLocaleString(),
+                    message: responses[randomIndex],
+                    status: 'received'
+                };
+                this.contacts[this.indexActive].messages.push(responseMessage);
+            }, 2000);
         },
+        chatSelect(index) {
+            this.indexActive = index;
+        },
+
+
     },
 }).mount('#app')

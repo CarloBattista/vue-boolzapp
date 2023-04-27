@@ -176,9 +176,14 @@ createApp({
                     ],
                 }
             ],
+
+            // Variabile per index chat impostata su 0
+            indexActive: 0,
         }
     },
     methods: {
-        
+        chatSelect(chatOpen) {
+            this.indexActive = chatOpen
+        },
     },
 }).mount('#app')

@@ -65,13 +65,13 @@
                     <!-- Container chats -->
                     <div class="container_all_chats">
                         <ul class="chats_lists">
-                            <li v-for="(element, index) in contacts" :key="index" class="chat_item">
+                            <li v-for="(element, index) in contacts" :key="index" class="chat_item" :class="(indexActive == index) ? 'chat_selected' : '' " @click="chatSelect(index)">
                                 <div class="user_avatar">
-                                    <img :src="'./_assets/_resources/imgs/' + element.avatar" alt="user avatar">
+                                    <img :src="'./_assets/_resources/imgs/' + element.avatar" :alt="'Avatar ' + element.name">
                                 </div>
                                 <div class="user_info">
                                     <div class="top_line">
-                                        <span class="user_name">{{element.name}}</span>
+                                        <span class="user_name">{{ element.name }}</span>
                                         <span class="clock">12:00</span>
                                     </div>
                                     <div class="bottom_line">

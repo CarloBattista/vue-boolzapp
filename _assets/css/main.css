@@ -412,6 +412,7 @@ body {
 /* Media Query */
 @media only screen and (max-width: 900px){
     .mainApp_wh{
+        width: 90%;
         flex-direction: column;
     }
     .wh_left{
@@ -423,5 +424,8 @@ body {
     }
     .container_all_chats{
         max-height: 140px;
+    }
+    .all_messages {
+        padding: 10px 5%;
     }
 }

@@ -184,11 +184,22 @@ createApp({
 
             // Variabile per collegare input
             textMessage: "",
+
+            // Variabile per collegare input della searchBar
+            searchQuery: "",
         }
     },
     created() {
         // Al caricamento della pagina viene visualizzata l'immagine della chat attiva
         this.activeContact = this.contacts[0];
+    },
+    computed: {
+        // Calcola gli elementi filtrati in base alla string di ricerca
+        filterContacts(){
+            return this.contacts.filter(contact => {
+                return contact.name.toLowerCase().includes(this.searchQuery.toLowerCase())
+            })
+        },
     },
     methods: {
         chatSelect: function (index) {

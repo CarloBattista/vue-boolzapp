@@ -60,12 +60,12 @@
                         <div class="box_icon_search">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
-                        <input type="text" class="searchInput" placeholder="Cerca o inizia una nuova chat">
+                        <input v-model="searchQuery" @input="filterContacts" type="text" class="searchInput" placeholder="Cerca o inizia una nuova chat">
                     </div>
                     <!-- Container chats -->
                     <div class="container_all_chats">
                         <ul class="chats_lists">
-                            <li v-for="(element, index) in contacts" :key="index" class="chat_item" :class="(indexActive == index) ? 'chat_selected' : '' " @click="chatSelect(index)">
+                            <li v-for="(element, index) in contacts" :key="index" class="chat_item" :class="(indexActive == index) ? 'chat_selected' : '' " v-show="filterContacts.includes(element)" @click="chatSelect(index)">
                                 <div class="user_avatar">
                                     <img :src="'./_assets/_resources/imgs/' + element.avatar" :alt="'Avatar ' + element.name">
                                 </div>
